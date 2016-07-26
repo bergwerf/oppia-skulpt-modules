@@ -1,0 +1,21 @@
+{
+  "name": "Oppia cheminformatics course",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Chrome extension for the Oppia cheminformatics course",
+  "homepage_url": "http://github.com/hermanbergwerf/oppia-skulpt-modules",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Oppia cheminformatics course"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
