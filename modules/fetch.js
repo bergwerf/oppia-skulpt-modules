@@ -15,7 +15,7 @@ var $builtinmodule = function (name) {
     return {
       type: Sk.promise,
       promise: new Promise(function (resolve, reject) {
-        fetch(url, {
+        fetch(url.v, {
           method: 'GET',
           mode: 'cors',
           cache: 'default'
