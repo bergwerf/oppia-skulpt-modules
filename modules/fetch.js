@@ -11,7 +11,7 @@ var $builtinmodule = function (name) {
   var mod = {}
 
   // Fetch API
-  mod.fetch = new Sk.builtin.func(function (self, url) {
+  mod.fetch = new Sk.builtin.func(function (url) {
     return {
       type: Sk.promise,
       promise: new Promise(function (resolve, reject) {
