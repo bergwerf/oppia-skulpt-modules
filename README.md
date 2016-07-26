@@ -8,4 +8,4 @@ Implemented libraries
 ---------------------
 Currently the following libraries are (partially) implemented:
 
-- `http.client`
+- `json`
