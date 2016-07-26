@@ -3,10 +3,10 @@
 // that can be found in the LICENSE file.
 
 // listen for our browerAction to be clicked
-chrome.browserAction.onClicked.addListener(function (tab) {
+chrome.webNavigation.onCompleted.addListener(function (tab) {
   if (tab.url.startsWith('https://www.oppia.org/')) {
     chrome.tabs.executeScript(tab.id, {
-      file: 'inject.js'
+      file: 'add-modules.js'
     })
   }
 })

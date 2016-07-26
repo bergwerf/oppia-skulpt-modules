@@ -14,8 +14,8 @@
     "default_title": "Oppia cheminformatics course"
   },
   "permissions": [
-    "https://*/*",
-    "http://*/*",
-    "tabs"
+    "tabs",
+    "webNavigation",
+    "https://www.oppia.org/*"
   ]
 }
