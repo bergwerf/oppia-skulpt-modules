@@ -30,7 +30,7 @@ var $builtinmodule = function (name) {
         type: Sk.promise,
         promise: new Promise(function (resolve, reject) {
           fetch('https://' + self.hostname + self.path, {
-            method: method,
+            method: self.method,
             mode: 'cors',
             cache: 'default'
           }).then(function (response) {
