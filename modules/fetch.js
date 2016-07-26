@@ -12,7 +12,7 @@ var $builtinmodule = function (name) {
 
   // Fetch API
   mod.fetch = new Sk.builtin.func(function (url) {
-    __logFetch('Fetch: ' + url)
+    __logFetch('Fetch: ' + url.v)
     return {
       type: Sk.promise,
       promise: new Promise(function (resolve, reject) {

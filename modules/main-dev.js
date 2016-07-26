@@ -3,6 +3,6 @@
 // that can be found in the LICENSE file.
 
 Sk.externalLibraries = {
-  'fetch': 'https://cdn.rawgit.com/hermanbergwerf/oppia-skulpt-modules/master/modules/fetch.js',
-  'json': 'https://cdn.rawgit.com/hermanbergwerf/oppia-skulpt-modules/master/modules/json.js'
+  'fetch': 'http://localhost/hermanbergwerf/oppia-skulpt-modules/modules/fetch.js',
+  'json': 'http://localhost/hermanbergwerf/oppia-skulpt-modules/modules/json.js'
 }

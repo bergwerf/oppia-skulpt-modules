@@ -12,6 +12,7 @@ var $builtinmodule = function (name) {
 
   // Fetch API
   mod.loads = new Sk.builtin.func(function (str) {
+    __logJson(str.v)
     var json = JSON.parse(str.v)
     __logJson(json)
     return Sk.ffi.remapToPy(json)
