@@ -3,7 +3,7 @@
 // that can be found in the LICENSE file.
 
 function log (msg) {
-  console.log('[Skulpt http.client module] ' + msg)
+  console.log('[Skulpt fetch module] ' + msg)
 }
 
 // Python wrapper of the JS Fetch API.
@@ -12,6 +12,7 @@ var $builtinmodule = function (name) {
 
   // Fetch API
   mod.fetch = new Sk.builtin.func(function (url) {
+    log('Fetch: ' + url)
     return {
       type: Sk.promise,
       promise: new Promise(function (resolve, reject) {
@@ -21,6 +22,7 @@ var $builtinmodule = function (name) {
           cache: 'default'
         }).then(function (response) {
           response.text().then(function (text) {
+            log('Fetch complete: ' + text)
             resolve(text)
           })
         }).catch(function (err) {
