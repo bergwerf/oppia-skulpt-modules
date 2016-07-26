@@ -4,10 +4,5 @@
 
 Sk.externalLibraries = {
   'fetch': 'https://raw.githubusercontent.com/hermanbergwerf/oppia-skulpt-modules/master/modules/fetch.js',
-  'json': {
-    'path': 'https://cdn.rawgit.com/trinketapp/json.sk/master/__init__.js',
-    'dependencies': [
-      'https://cdn.rawgit.com/trinketapp/json.sk/master/stringify.js'
-    ]
-  }
+  'json': 'https://raw.githubusercontent.com/hermanbergwerf/oppia-skulpt-modules/master/modules/json.js'
 }

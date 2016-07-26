@@ -2,7 +2,7 @@
 // Use of this source code is governed by an AGPL-3.0-style license
 // that can be found in the LICENSE file.
 
-function log (msg) {
+function __logFetch (msg) {
   console.log('[Skulpt fetch module] ' + msg)
 }
 
@@ -12,7 +12,7 @@ var $builtinmodule = function (name) {
 
   // Fetch API
   mod.fetch = new Sk.builtin.func(function (url) {
-    log('Fetch: ' + url)
+    __logFetch('Fetch: ' + url)
     return {
       type: Sk.promise,
       promise: new Promise(function (resolve, reject) {
@@ -22,7 +22,7 @@ var $builtinmodule = function (name) {
           cache: 'default'
         }).then(function (response) {
           response.text().then(function (text) {
-            log('Fetch complete: ' + text)
+            __logFetch('Fetch complete: ' + text)
             resolve(text)
           })
         }).catch(function (err) {
