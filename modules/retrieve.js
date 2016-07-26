@@ -5,9 +5,11 @@
 var $builtinmodule = function (name) {
   var mod = {}
 
-  mod.loads = new Sk.builtin.func(function (str) {
-    var json = JSON.parse(str.v)
-    return Sk.ffi.remapToPy(json)
+  mod.retrieve = new Sk.builtin.func(function (url) {
+    var xhttp = new XMLHttpRequest()
+    xhttp.open('GET', url.v, false)
+    xhttp.send()
+    return xhttp.responseText
   })
 
   return mod

@@ -6,7 +6,7 @@
 chrome.webNavigation.onCompleted.addListener(function (tab) {
   if (tab.url.startsWith('https://www.oppia.org/')) {
     chrome.tabs.executeScript(tab.id, {
-      file: 'add-modules.js'
+      file: 'add-modules-dev.js'
     })
   }
 })

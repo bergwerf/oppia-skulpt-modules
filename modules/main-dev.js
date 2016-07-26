@@ -3,5 +3,6 @@
 // that can be found in the LICENSE file.
 
 Sk.externalLibraries = {
+  'retrieve': 'http://localhost/hermanbergwerf/oppia-skulpt-modules/modules/retrieve.js',
   'json': 'http://localhost/hermanbergwerf/oppia-skulpt-modules/modules/json.js'
 }
