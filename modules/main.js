@@ -3,11 +3,11 @@
 // that can be found in the LICENSE file.
 
 Sk.externalLibraries = {
-  'fetch': 'https://rawgit.com/hermanbergwerf/oppia-skulpt-modules/master/modules/fetch.js',
+  'fetch': 'https://raw.githubusercontent.com/hermanbergwerf/oppia-skulpt-modules/master/modules/fetch.js',
   'json': {
-    'path': 'https://rawgit.com/trinketapp/json.sk/master/__init__.js',
+    'path': 'https://cdn.rawgit.com/trinketapp/json.sk/master/__init__.js',
     'dependencies': [
-      'https://rawgit.com/trinketapp/json.sk/master/stringify.js'
+      'https://cdn.rawgit.com/trinketapp/json.sk/master/stringify.js'
     ]
   }
 }
